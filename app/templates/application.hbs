@@ -1,5 +1,50 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<head>
+  <title>Lab 03 Project Proposal</title>
+  <style>
+    #box {
+      width: 45%;
+    }
+  </style>
+</head>
+<h2>Find Your Org.</h2>
+<div id="box">
+  <p>
+    1. What problem are you trying to solve?
+    <br>
+    A big problem with people trying to find non-profits to support is that they don't find orgs they are passionate about or aren't sure of the impact being made.
+    This site will help people find effective-altruistic organizations that they can support based on their interests.
+  </p>
+  <p>
+    2. Who is the primary audience?
+    <br>
+    The target audience are novices to the non-profit community that want to get involved or support something they are passionate about.
+  </p>
+  <p>
+    3. How will the project requirements be fulfilled?
+    <br>
+    Routes will include
+    <ul>
+      <li>homepage</li>
+      <li>about</li>
+      <li>search form (with GET request)</li>
+      <li>individual org</li>
+      <li>favorited (with PUT and DELETE request)</li>
+    </ul>
+    Each page will have a unique title and loading & error states included with the Mirage timing property.
+    <br>
+    There will be an "adding" feedback whenever a user adds an org. to their favorites.
+    <br>
+    There will be form validation in the search route.
+    <br>
+    Data down/Actions Up will be used to move from orgs on results page or on idividual orgs pages.
+    <br>
+    Tests with Travis CI integration TBD
+  </p>
+  <p>
+    4. Which addon(s) do you think you will use and for what?
+    <br>
+    Burger menu for main pages and collapsable panel with basic org info.
+  </p>
+</div>
 
 {{outlet}}
